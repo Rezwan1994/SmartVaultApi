@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Upload File</title>
+</head>
+<body>
+    <div>
+        <h1>Upload File</h1>
+        @FileUpload.GetHtml(
+            initialNumberOfFiles:1,
+            allowMoreFilesToBeAdded:false,
+            includeFormTag:true,
+            uploadText:"Upload")
+
+        @if (TempData["message"] != null)
+        {
+            <div>@TempData["message"].ToString()</div>
+        }
+        @if (TempData["message"] == null)
+        {
+            <div>Error uploading file</div>
+        }
+    </div>
+</body>
+</html>

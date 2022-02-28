@@ -1,0 +1,25 @@
+﻿@model string
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome!</h1>
+        @using (Html.BeginForm()) {
+            
+            @Html.ValidationSummary(true)
+
+            <span>Enter your email address:</span>
+
+            @Html.EditorForModel(Model, "email")
+
+            <input type="submit" value="Submit" />
+        }
+    </div>
+</body>
+</html>

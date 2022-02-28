@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartVault.Net</name>
+    </assembly>
+    <members>
+        <member name="T:SmartVault.Net.AcceptOverride">
+            <summary>
+            AcceptOverride
+            
+            Allows for the override of what content type to use for response.
+            This is used when a multipart/form-data request is used. It may
+            have an embeeded accept form.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.ClientNetContext.RequestTimeout">
+            <summary>
+            Request write timeout in (ms), or Timeout.Infinite
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.ClientNetContext.ResponseTimeout">
+            <summary>
+            Request write timeout in (ms), or Timeout.Infinite
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.Constants">
+            <summary>
+            Constants
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.PreflightResponse">
+            <summary>
+            Use to provide information back for handling Cross-Origin Resource
+            Sharing (CORS).
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.Http.IClientWriter">
+            <summary>
+            IClientWriter
+            
+            This interface represents an abstract representation of a client writer.
+            Using this interface, an HTTP client can send a request to a HTTP server.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.INetClientReader">
+            <summary>
+            IClientReader
+            
+            Provides a mechanism to request a payload from a server.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Net.INetClientReader.ReadPayload``1">
+            <summary>
+            ReadPayload
+            
+            Returns null if no payload is available.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Net.INetClientReader.ReadAttachment">
+            <summary>
+            ReadAttachment
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SmartVault.Net.INetClientReader.RaiseError">
+            <summary>
+            RaiseError
+            
+            Determines if exceptions throw errors or return packets
+            with error information. The default is true.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.INetClientWriter">
+            <summary>
+            INetClientWriter
+            
+            Abstracts the writing of objects to a server.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Net.Http.WebRequestInfo.ConstructQueryString(System.Collections.Specialized.NameValueCollection,System.String,System.Boolean)">
+            <summary>
+            Constructs a NameValueCollection into a query string.
+            </summary>
+            <remarks>Consider this method to be the opposite of "System.Web.HttpUtility.ParseQueryString"</remarks>
+            <param name="parameters">The NameValueCollection</param>
+            <param name="delimiter">The String to delimit the key/value pairs</param>
+            <param name="omitEmpty">True to omit empty parmeters</param>
+            <returns>A key/value structured query string, delimited by the specified String</returns>
+        </member>
+        <member name="P:SmartVault.Net.Http.WebRequestInfo.RequestTimeout">
+            <summary>
+            Request write timeout in (ms), or Timeout.Infinite
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.Http.WebRequestInfo.ResponseTimeout">
+            <summary>
+            Request write timeout in (ms), or Timeout.Infinite
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.IBasicAuth">
+            <summary>
+            IBasicAuth
+            
+            Captures the information regarding authorization.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.MediaType">
+            <summary>
+            MediaType
+            
+            Per RFC 2616, http://www.w3.org/Protocols/rfc2616
+            HTTP uses Internet Media Types [17]  in the Content-Type (section 14.17) and Accept (section 14.1) header fields in order to provide open and extensible data typing and type negotiation.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.MultipartFormData">
+            <summary>
+            MultipartFormData
+            
+            This class provides a convenient mechanism for processing multipart 
+            form data.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.MultipartFormData.InnerContentType">
+            <summary>
+            Inner Content Type
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.MultipartFormData.InnerAcceptType">
+            <summary>
+            Inner Acept Type
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.MultipartFormData.Content">
+            <summary>
+            Content (proto)
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.MultipartFormData.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.MultipartFormData.FileContentType">
+            <summary>
+            Content Type
+            </summary>
+        </member>
+        <member name="P:SmartVault.Net.MultipartFormData.AuthenticationToken">
+            <summary>
+            AuthenticationToken
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.ProtoSerializerNet">
+            <summary>
+            ProtoSerializerNet
+            
+            Extends the ProtoSerializer to deal with mime types.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.MultipartMimeReader">
+            <summary>
+            MimeSectionWriter
+            
+            Used to read mime sections from a multipart mime message.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Net.MultipartMimeReader.#ctor(System.IO.Stream)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:SmartVault.Net.MultipartMimeReader.ReadSection(SmartVault.Net.MimeSection@)">
+            <summary>
+            ReadSection
+            
+            Reads a mime section at a time.
+            </summary>
+            <param name="section">Section</param>
+            <returns>Returns true if section is read</returns>
+        </member>
+        <member name="T:SmartVault.Net.MultipartMimeWriter">
+            <summary>
+            MimeSectionWriter
+            
+            Used to write a mime section in a multipart mime message.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Net.UploadStyle">
+            <summary>
+            Controls the structure of the HTTP packet when uploading.
+            This is primairly used for testing. 
+            </summary>
+        </member>
+    </members>
+</doc>

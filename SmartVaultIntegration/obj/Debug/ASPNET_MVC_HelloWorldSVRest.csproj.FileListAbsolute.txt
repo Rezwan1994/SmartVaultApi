@@ -1,0 +1,264 @@
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csprojResolveAssemblyReference.cache
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.dll
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.pdb
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.xml
+C:\Users\stownsend\Documents\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Helpers.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Helpers.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Infrastructure.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.pdb
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.xml
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.dll
+C:\dev\misc\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Helpers.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.pdb
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.xml
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csprojResolveAssemblyReference.cache
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\stownsend\Documents\Tutorials\new\aspnetmvc4\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Helpers.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.pdb
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csprojResolveAssemblyReference.cache
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-download\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.pdb
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Helpers.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.pdb
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.xml
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csprojResolveAssemblyReference.cache
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.dll
+C:\Users\kbenitez\Documents\TUTORIAL ZIPS\MVC-upload\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.pdb
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll.config
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\ASPNET_MVC_HelloWorldSVRest.pdb
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Helpers.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Infrastructure.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\WebMatrix.WebData.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\WebMatrix.Data.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\BouncyCastle.Crypto.pdb
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Google.ProtocolBuffers.Serialization.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Core.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Net.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.OAuth.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Proto.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\SmartVault.Rest.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\Newtonsoft.Json.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Net.Http.Formatting.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Helpers.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Http.WebHost.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Mvc.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.Razor.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Deployment.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\System.Web.WebPages.Razor.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\WebMatrix.WebData.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\bin\WebMatrix.Data.xml
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csprojAssemblyReference.cache
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csproj.CoreCompileInputs.cache
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.csproj.CopyComplete
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.dll
+E:\Rezwan\SmartVault\ASPNET_MVC_HelloWorldSVRest\ASPNET_MVC_HelloWorldSVRest\obj\Debug\ASPNET_MVC_HelloWorldSVRest.pdb

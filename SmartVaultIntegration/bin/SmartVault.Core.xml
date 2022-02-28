@@ -1,0 +1,1483 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartVault.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SmartVault.Core.AbsolutePath">
+            <summary>
+            AbsolutePath
+            
+            Provides a pathing class for easy handling of non host portion of a URI path.
+            These paths are case insensitive.
+            
+            This path is rooted.
+            
+            Example: /pth/My Account
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.IPath">
+            <summary>
+            IPath
+            
+            An interface for working with paths.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.IPath.Append(System.String)">
+            <summary>
+            Append Element
+            </summary>
+            <param name="element">Element to append</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.IPath.Append(SmartVault.Core.RelativePath)">
+            <summary>
+            Append Relative Path
+            </summary>
+            <param name="path">Relative Path to Append</param>
+            <returns></returns> 
+        </member>
+        <member name="M:SmartVault.Core.IPath.Subpath(System.Int32)">
+            <summary>
+            Provide a subpath
+            </summary>
+            <param name="startIndex">Index to start at</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.IPath.Subpath(System.Int32,System.Int32)">
+            <summary>
+            Provide a subpath
+            </summary>
+            <param name="startIndex">Index to start at</param>
+            <param name="length">Length of subpath</param>
+            <returns></returns> 
+        </member>
+        <member name="P:SmartVault.Core.IPath.Count">
+            <summary>
+            Count of elements
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.IPath.Item(System.Int32)">
+            <summary>
+            Indexor
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SmartVault.Core.IPath.Last">
+            <summary>
+            Return Last Element
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.#ctor(System.String)">
+            <summary>
+            Constructor
+            
+            If the path is not rooted at '/' this will throw.
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})">
+            <summary>
+            Constructor
+            
+            Merge two lists of elements
+            </summary>
+            <param name="elements1">List 1 of elements</param>
+            <param name="elements2">List 2 of elements</param>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.#ctor(System.Collections.Generic.IList{System.String},System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            
+            Build from a portion of elements
+            </summary>
+            <param name="elements">Element List</param>
+            <param name="start">Consume from this offset</param>
+            <param name="count">Number of elements to consume</param>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.ToRelative">
+            <summary>
+            Convert to Relative Path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.Subpath(System.Int32)">
+            <summary>
+            Provide a subpath
+            </summary>
+            <param name="startIndex">Index to start at</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.Subpath(System.Int32,System.Int32)">
+            <summary>
+            Provide a subpath
+            </summary>
+            <param name="startIndex">Index to start at</param>
+            <param name="length">Length of subpath</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.Append(System.String)">
+            <summary>
+            Append Element
+            </summary>
+            <param name="element">Element to append</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.Append(SmartVault.Core.RelativePath)">
+            <summary>
+            Append Relative Path
+            </summary>
+            <param name="path">Relative Path to Append</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.GetHashCode">
+            <summary>
+            GetHashCode()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.Equals(System.Object)">
+            <summary>
+            Determines if this object equals another object.
+            This is done by converting the rhs using .ToString().ToLower() and
+            performing a string comparision.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.op_Equality(SmartVault.Core.AbsolutePath,SmartVault.Core.AbsolutePath)">
+            <summary>
+            Equal Operator
+            </summary>
+            <param name="p1"></param>
+            <param name="p2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.op_Inequality(SmartVault.Core.AbsolutePath,SmartVault.Core.AbsolutePath)">
+            <summary>
+            Not Equal Operator
+            </summary>
+            <param name="p1"></param>
+            <param name="p2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.AbsolutePath.ToString">
+            <summary>
+            ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SmartVault.Core.AbsolutePath.Root">
+            <summary>
+            Root
+            
+            The root path.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.AbsolutePath.Parent">
+            <summary>
+            Parent path. Throws an exception if this is root.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.AbsolutePath.Last">
+            <summary>
+            Return Last Element
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.AbsolutePath.Count">
+            <summary>
+            Count
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.AbsolutePath.Item(System.Int32)">
+            <summary>
+            Array Accessor
+            </summary>
+            <param name="index">Index</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.AESCryptoKey">
+            <summary>
+            Provides AES-256 bit encryption using a global IV (Init vector) based on the current process' entry
+            assembly.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.CryptoKey">
+            <summary>
+            Base class for encryption/decryption classes
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.IEncryptDecrypt">
+            <summary>
+            A simple interface for encrypting and decrypting strings, obtain an instance through the
+            static Encryption inteface calss.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Encrypt(System.IO.Stream)">
+            <summary>Encrypts a stream of data</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Decrypt(System.IO.Stream)">
+            <summary> Decrypts a stream of data </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Encrypt(System.Byte[])">
+            <summary>Encrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Encrypt(System.String)">
+            <summary>Encrypts a string and encodes the result in base-64 encoded text</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Encrypt(System.String,SmartVault.Core.Crypto.ByteEncoding)">
+            <summary>Encrypts a string and encodes the result in specified encoding format</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Decrypt(System.Byte[])">
+            <summary>Decrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Decrypt(System.String)">
+            <summary>Decrypts a string from base-64 encoded text</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IEncryptDecrypt.Decrypt(System.String,SmartVault.Core.Crypto.ByteEncoding)">
+            <summary>Decrypts a string from the specified encoding format</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.#ctor">
+            <summary> </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Finalize">
+            <summary> </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Assert``1(``0)">
+            <summary> Throws ObjectDisposedException if the object has been disposed </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Dispose">
+            <summary> Clears any secure memory associated with this object </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Dispose(System.Boolean)">
+            <summary> Clears any secure memory associated with this object </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Encrypt(System.IO.Stream)">
+            <summary> Wraps the stream with a cryptographic stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Decrypt(System.IO.Stream)">
+            <summary> Wraps the stream with a cryptographic stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Encrypt(System.Byte[])">
+            <summary> Encrypts the given bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Decrypt(System.Byte[])">
+            <summary> Decrypts the given bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Encrypt(System.String)">
+            <summary>
+            Encrypts the encoded text and returns the base-64 encoded result
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Encrypt(System.String,SmartVault.Core.Crypto.ByteEncoding)">
+            <summary>
+            Encrypts the encoded text and returns the base-64 encoded result
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Decrypt(System.String)">
+            <summary>
+            Decrypts the base-64 encoded bytes, decrypts the data and returns the string
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.Decrypt(System.String,SmartVault.Core.Crypto.ByteEncoding)">
+            <summary>
+            Decrypts the base-64 encoded bytes, decrypts the data and returns the string
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.CryptoKey.CryptographicException">
+            <summary>
+            Used to ensure generality in excpetions raised from cryptographic routines.
+            </summary>
+            <example>catch { throw CryptographicException(); }</example>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.DefaultIV">
+            <summary> Creates a default IV for the crypto provider if AESCryptoKey.CryptoIV is not set </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.#ctor">
+            <summary> Creates a new key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.#ctor(System.Byte[])">
+            <summary> Creates an object representing the specified key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.#ctor(System.Byte[],System.Byte[])">
+            <summary> Creates an object representing the specified key and init vector </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.FromBytes(System.Byte[])">
+            <summary>
+            Serializes the KEY and IV to a single array of bytes.  Use FromByteArray() to restore.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.Dispose(System.Boolean)">
+            <summary> Disposes of the key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.ToArray">
+            <summary>
+            Serializes the KEY and IV to a single array of bytes.  Use FromByteArray() to restore.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.Encrypt(System.IO.Stream)">
+            <summary>Encrypts a stream of data</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.Decrypt(System.IO.Stream)">
+            <summary> Decrypts a stream of data </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.Encrypt(System.Byte[])">
+            <summary>Encrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AESCryptoKey.Decrypt(System.Byte[])">
+            <summary>Decrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AESCryptoKey.ProcessDefaultIV">
+            <summary>
+            Used to define the IV for AES keys created in this process, by default this is MD5(UTF8(Name)) where
+            Name is the short-name of either the entry-point assembly, or "CSharpTest.Net.Library" if undefined.
+            </summary>
+            <remarks>
+            The process default IV is used with AESCryptoKey instances that are created without explicitly
+            providing the IV value for the key.  This is done internally when using the Password class' 
+            CreateKey(...), Encrypt(...), or Decrypt(...) methods.  While this worked well enough for some
+            programs, this has proven to be a flawed approach as the entry-point assembly can change.  For example
+            if another .NET process call Assembly.Execute() on your executable.  
+            
+            Applications are advised that they should capture the existing value and store that in App.Config, 
+            and set the following prior to using this class, or the Password class.  The entry-points related
+            to this that have been marked Obsolete() will be removed in the long-term and by capturing this
+            value and manually using it you can ensure your application will continue to function properly.
+            </remarks>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AESCryptoKey.Algorithm">
+            <summary> Returns the algorithm key or throws ObjectDisposedException </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AESCryptoKey.Key">
+            <summary> Returns the AES 256 bit key this object was created with </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AESCryptoKey.IV">
+            <summary> Returns the AES 256 bit key this object was created with </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.AggregateStream">
+            <summary>
+            Provides a base-class that aggregates another stream object
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.#ctor">
+            <summary> Creates the wrapper without an underlying stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.#ctor(System.IO.Stream)">
+            <summary> Creates the wrapper with the underlying stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.Dispose(System.Boolean)">
+            <summary> Disposes of this.Stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.Close">
+            <summary> Disposes of this.Stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.Flush">
+            <summary>
+            When overridden in a derived class, clears all buffers for this stream and causes any buffered data to be written to the underlying device.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            When overridden in a derived class, reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.ReadByte">
+            <summary>
+            Reads a byte from the stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            When overridden in a derived class, sets the position within the current stream.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.SetLength(System.Int64)">
+            <summary>
+            When overridden in a derived class, sets the length of the current stream.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            When overridden in a derived class, writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AggregateStream.WriteByte(System.Byte)">
+            <summary>
+            Writes a byte to the current position in the stream and advances the position within the stream by one byte.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AggregateStream.Stream">
+            <summary> Allows modifying the underlying stream </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AggregateStream.CanRead">
+            <summary>
+            When overridden in a derived class, gets a value indicating whether the current stream supports reading.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AggregateStream.CanSeek">
+            <summary>
+            When overridden in a derived class, gets a value indicating whether the current stream supports seeking.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AggregateStream.CanWrite">
+            <summary>
+            When overridden in a derived class, gets a value indicating whether the current stream supports writing.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AggregateStream.Length">
+            <summary>
+            When overridden in a derived class, gets the length in bytes of the stream.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AggregateStream.Position">
+            <summary>
+            When overridden in a derived class, gets or sets the position within the current stream.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.AsymmetricKey">
+            <summary>
+            Provides the ability to encrypt and decrypt block-transform data
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AsymmetricKey.EncryptBlock(System.Byte[])">
+            <summary>Encrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AsymmetricKey.DecryptBlock(System.Byte[])">
+            <summary>Decrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AsymmetricKey.Encrypt(System.Byte[])">
+            <summary>Encrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AsymmetricKey.Decrypt(System.Byte[])">
+            <summary>Decrypts a raw data block as a set of bytes</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AsymmetricKey.Encrypt(System.IO.Stream)">
+            <summary> Wraps the stream with a cryptographic stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.AsymmetricKey.Decrypt(System.IO.Stream)">
+            <summary> Wraps the stream with a cryptographic stream </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AsymmetricKey.BlockSize">
+            <summary> Provides the size, in bytes, of the maximum transform unit </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.AsymmetricKey.TransformSize">
+            <summary> Proivdes the output size, in bytes, assuming an input of BlockSize </summary>
+        </member>
+        <member name="T:Check">
+            <summary>
+            provides a set of runtime validations for inputs
+            </summary>
+        </member>
+        <member name="M:Check.Assert``1(System.Boolean)">
+            <summary>
+            Verifies that the condition is true and if it fails constructs the specified type of
+            exception and throws.
+            </summary>
+        </member>
+        <member name="M:Check.Assert``1(System.Boolean,System.String)">
+            <summary>
+            Verifies that the condition is true and if it fails constructs the specified type of
+            exception with any arguments provided and throws.
+            </summary>
+        </member>
+        <member name="M:Check.Assert(System.Boolean,Check.ExceptionBuilder)">
+            <summary>
+            Verifies that the condition is true and if it fails throws the execption returned
+            by fnExceptionBuilder()
+            </summary>
+        </member>
+        <member name="M:Check.Assert``1(System.Boolean,System.String,System.Exception)">
+            <summary>
+            Verifies that the condition is true and if it fails constructs the specified type of
+            exception with any arguments provided and throws.
+            </summary>
+        </member>
+        <member name="M:Check.NotNull``1(``0)">
+            <summary>
+            Verifies that value is not null and returns the value or throws ArgumentNullException
+            </summary>
+        </member>
+        <member name="M:Check.NotEmpty(System.String)">
+            <summary>
+            Verfies that the string is not null and not empty and returns the string.
+            throws ArgumentNullException, ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.NotEmpty(System.Guid)">
+            <summary>
+            Verfies that the Guid is not empty.
+            throws ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.NotEmpty``1(``0)">
+            <summary>
+            Verfies that the collection is not null and not empty and returns the collection.
+            throws ArgumentNullException, ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.IsEqual``1(``0,``0)">
+            <summary>
+            Verifies that the two values are the same
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.NotEqual``1(``0,``0)">
+            <summary>
+            Verifies that the two values are NOT the same
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.ArraySize``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            Verifies that the array is not empty and has at least min, but not more than max items.
+            throws ArgumentNullExcpetion
+            throws ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.InRange``1(``0,``0,``0)">
+            <summary>
+            Verifies that the value is min, max, or between the two.
+            throws ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.IsAssignable``1(System.Object)">
+            <summary>
+            Returns (T)value if the object provided can be assinged to a variable of type T
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.IsAssignable(System.Type,System.Object)">
+            <summary>
+            Returns value if the object provided can be assinged to a variable of type toType
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.IsAssignable(System.Type,System.Type)">
+            <summary>
+            Throws ArgumentException if the type fromType cannot be assigned to variable of type toType
+            </summary>
+        </member>
+        <member name="T:Check.ExceptionBuilder">
+            <summary>
+            Used to delay creation of the excpetion until the condition fails.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.BinaryComparer">
+            <summary>
+            Dictionary comparer for comparing arrays of bytes by value equality
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.BinaryComparer.Equals(System.Byte[],System.Byte[])">
+            <summary> returns true if both arrays contain the exact same set of bytes. </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.BinaryComparer.Compare(System.Byte[],System.Byte[])">
+            <summary> Compares the contents of the byte arrays and returns the result. </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.BinaryComparer.GetHashCode(System.Byte[])">
+            <summary> Returns a hash code the instance of the object </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.BinaryComparer.System#Collections#Generic#IComparer{System#Byte[]}#Compare(System.Byte[],System.Byte[])">
+            <summary> Compares the contents of the byte arrays and returns the result. </summary> 
+        </member>
+        <member name="M:SmartVault.Core.Crypto.BinaryComparer.System#Collections#Generic#IEqualityComparer{System#Byte[]}#Equals(System.Byte[],System.Byte[])">
+            <summary> Returns true if the two objects are the same instance </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.BinaryComparer.System#Collections#Generic#IEqualityComparer{System#Byte[]}#GetHashCode(System.Byte[])">
+            <summary> Returns a hash code the instance of the object </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.ByteEncoding">
+            <summary> Defines a type of formatting for encoding byte[] to a string value </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.ByteEncoding.EncodeBytes(System.Byte[])">
+            <summary>Encodes a set of bytes and returns the encoded text as a string</summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.ByteEncoding.DecodeBytes(System.String)">
+            <summary>Decodes the string provided and returns the original set of bytes</summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.ByteEncoding.Base64">
+            <summary> Standard base-64 padded encoding using the following characters: a-z, A-Z, 0-9, +, /, = </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.ByteEncoding.Safe64">
+            <summary> A modified base-64 non-padded encoding using the following characters: a-z, A-Z, 0-9, -, _ </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.ByteEncoding.Hex">
+            <summary> The hexidecimal encoding for the bytes using the following characters: 0-9, a-f </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Comparable`1">
+            <summary> Provides a base-class for non-reference comparison of objects </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Equatable`1">
+            <summary> Provides a base-class for non-reference equality objects </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.Equatable`1.Comparer">
+            <summary> return a non-reference equality comparer for this class </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.Equals(`0)">
+            <summary> Returns true if the other object is equal to this one </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.Equals(System.Object)">
+            <summary> Returns true if the other object is equal to this one </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.GetHashCode">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.Equals(`0,`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.GetHashCode(`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.op_Equality(SmartVault.Core.Crypto.Equatable{`0},SmartVault.Core.Crypto.Equatable{`0})">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.op_Inequality(SmartVault.Core.Crypto.Equatable{`0},SmartVault.Core.Crypto.Equatable{`0})">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.Equatable`1.HashCode">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Equatable`1.EqualityComparer">
+            <summary> Implements the equality comparer </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.EqualityComparer.Equals(`0,`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Equatable`1.EqualityComparer.GetHashCode(`0)">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.Comparable`1.Comparer">
+            <summary> returns a non-reference comparer for this class </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.Equals(`0)">
+            <summary> Returns true if the object is equal </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.CompareTo(`0)">
+            <summary> Compares with another object of T </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.op_LessThan(SmartVault.Core.Crypto.Comparable{`0},SmartVault.Core.Crypto.Comparable{`0})">
+            <summary> Compares two objects </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.op_LessThanOrEqual(SmartVault.Core.Crypto.Comparable{`0},SmartVault.Core.Crypto.Comparable{`0})">
+            <summary> Compares two objects </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.op_GreaterThan(SmartVault.Core.Crypto.Comparable{`0},SmartVault.Core.Crypto.Comparable{`0})">
+            <summary> Compares two objects </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.op_GreaterThanOrEqual(SmartVault.Core.Crypto.Comparable{`0},SmartVault.Core.Crypto.Comparable{`0})">
+            <summary> Compares two objects </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Comparable`1.EqualityComparer">
+            <summary> Implements the equality comparer </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.EqualityComparer.Equals(`0,`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.EqualityComparer.GetHashCode(`0)">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Comparable`1.EqualityComparer.Compare(`0,`0)">
+            <summary> Returns the comparison between the two objects </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Crc32">
+            <summary> Provides a simple CRC32 checksum for a set of bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.#ctor(System.Int32)">
+            <summary> Resumes the computation of a CRC32 value </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.#ctor(System.String)">
+            <summary> Initailizes the Crc32 value to the checksum of the string as a series of 16-bit values </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.#ctor(System.Byte[])">
+            <summary> Initailizes the Crc32 value to the checksum of the bytes provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.ToString">
+            <summary> Returns the computed CRC32 value as a Hex string </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Add(System.Byte)">
+            <summary> Adds a byte to the checksum </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Addition(SmartVault.Core.Crypto.Crc32,System.Byte)">
+            <summary> Adds a byte to the checksum </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Add(System.Byte[])">
+            <summary> Adds an entire array of bytes to the checksum </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Add(System.Byte[],System.Int32,System.Int32)">
+            <summary> Adds a range from an array of bytes to the checksum </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Addition(SmartVault.Core.Crypto.Crc32,System.Byte[])">
+            <summary> Adds an entire array of bytes to the checksum </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Add(System.String)">
+            <summary> Adds a string to the checksum as a series of 16-bit values (big endian) </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Addition(SmartVault.Core.Crypto.Crc32,System.String)">
+            <summary> Adds a string to the checksum as a series of 16-bit values </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.GetHashCode">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Equals(System.Object)">
+            <summary> Returns true if the other object is equal to this one </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Equals(SmartVault.Core.Crypto.Crc32)">
+            <summary> Returns true if the other object is equal to this one </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.Equals(System.Int32)">
+            <summary> Returns true if the CRC32 provided is equal to this one </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Equality(SmartVault.Core.Crypto.Crc32,SmartVault.Core.Crypto.Crc32)">
+            <summary> Compares the two objects for equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Inequality(SmartVault.Core.Crypto.Crc32,SmartVault.Core.Crypto.Crc32)">
+            <summary> Compares the two objects for equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Equality(SmartVault.Core.Crypto.Crc32,System.Int32)">
+            <summary> Compares the two objects for equality </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Crc32.op_Inequality(SmartVault.Core.Crypto.Crc32,System.Int32)">
+            <summary> Compares the two objects for equality </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.Crc32.Value">
+            <summary> Returns the computed CRC32 value </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.DisposingList">
+            <summary>
+            Disposes of each element in the collection when the collection is disposed.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.DisposingList`1">
+            <summary>
+            Disposes of each element in the collection when the collection is disposed.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList`1.#ctor">
+            <summary>
+                 Initializes a new instance of the System.Collections.Generic.List&gt;T> class
+                 that is empty and has the default initial capacity.
+             </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+                 Initializes a new instance of the System.Collections.Generic.List&gt;T> class
+                 that contains elements copied from the specified collection and has sufficient
+                 capacity to accommodate the number of elements copied.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList`1.#ctor(System.Int32)">
+            <summary>
+                 Initializes a new instance of the System.Collections.Generic.List&gt;T> class
+                 that is empty and has the specified initial capacity.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList`1.Dispose">
+            <summary>
+            Disposes of each element in the collection when the collection is disposed.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList.#ctor">
+            <summary>
+                 Initializes a new instance of the System.Collections.Generic.List&gt;T> class
+                 that is empty and has the default initial capacity.
+             </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList.#ctor(System.Collections.Generic.IEnumerable{System.IDisposable})">
+            <summary>
+                 Initializes a new instance of the System.Collections.Generic.List&gt;T> class
+                 that contains elements copied from the specified collection and has sufficient
+                 capacity to accommodate the number of elements copied.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingList.#ctor(System.Int32)">
+            <summary>
+                 Initializes a new instance of the System.Collections.Generic.List&gt;T> class
+                 that is empty and has the specified initial capacity.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.DisposingStream">
+            <summary>
+            Servers a dual-role, it can prevent an aggregated stream from disposing, or
+            it can manage other objects that need to be disposed when the stream is disposed.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingStream.#ctor(System.IO.Stream)">
+            <summary> Create the wrapper on the provided stream, add disposables via WithDosposeOf(...) </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingStream.Dispose(System.Boolean)">
+            <summary> Disposes of the stream and then all objects in the disposable list </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.DisposingStream.WithDisposeOf(System.IDisposable)">
+            <summary> Adds an object to this stream that will be disposed when the stream is disposed. </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.HexEncoding">
+            <summary>
+            The hexidecimal encoding for the bytes using the following characters: 0-9, a-f
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.EncodeBytes(System.Byte[])">
+            <summary> Transforms a sequence of characters from '0' - '9' and 'a' - 'f' in the binary values </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.EncodeBytes(System.Byte[],System.Int32,System.Int32)">
+            <summary> Transforms a sequence of characters from '0' - '9' and 'a' - 'f' in the binary values </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.EncodeBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+            <summary> Transforms a sequence of characters from '0' - '9' and 'a' - 'f' in the binary values </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.DecodeBytes(System.String)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.DecodeBytes(System.String,System.Int32,System.Int32)">
+            <summary> Returns the original byte array provided when the encoding was performed </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.DecodeBytes(System.Byte[])">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.DecodeBytes(System.Byte[],System.Int32,System.Int32)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.HexEncoding.DecodeBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.IOStream">
+            <summary>
+            A collection of Stream helpers
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.IOStream.CopyStream(System.IO.Stream,System.IO.Stream)">
+            <summary> Copy the specified number of bytes from the input stream to the provided output stream </summary>
+            <returns> The number of bytes copied </returns>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.NonClosingStream">
+            <summary>
+            Provides a stream wrapper that will not close/dispose the underlying stream
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.NonClosingStream.#ctor(System.IO.Stream)">
+            <summary> Creates a wrapper around the provided stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.NonClosingStream.Close">
+            <summary> Disposes of this.Stream </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.NonClosingStream.Dispose(System.Boolean)">
+            <summary> Prevents the disposal of the aggregated stream </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Safe64Encoding">
+            <summary>
+            This encoding produces a 'url' safe string from bytes, similar to base64 encoding yet
+            it replaces '+' with '-', '/' with '_' and omits padding.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.EncodeBytes(System.Byte[])">
+            <summary> Returns a encoded string of ascii characters that are URI safe </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.EncodeBytes(System.Byte[],System.Int32,System.Int32)">
+            <summary> Returns a encoded string of ascii characters that are URI safe </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.EncodeBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+            <summary> Returns a encoded string of ascii characters that are URI safe </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.DecodeBytes(System.String)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.DecodeBytes(System.String,System.Int32,System.Int32)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.DecodeBytes(System.Byte[])">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.DecodeBytes(System.Byte[],System.Int32,System.Int32)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Safe64Encoding.DecodeBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+            <summary> Decodes the ascii text from the bytes provided into the original byte array </summary>
+        </member>
+        <member name="T:SmartVault.Core.ErrorCodes">
+            <summary>
+            Public Error Codes
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.ObjectNotFound">
+            <summary>
+            Object Not Found
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.AccessDenied">
+            <summary>
+            Access Denied
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.ObjectAlreadyExists">
+            <summary>
+            Object Already Exists
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.UserLimitExceeded">
+            <summary>
+            User Limit Exceeded 
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.DiskSpaceLimitExceededException">
+            <summary>
+            Out Of Space Exception
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.SearchIndexNotAvailable">
+            <summary>
+            Search Index Available
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.GeneralFailure">
+            <summary>
+            General Failure
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.FileAlreadyExists">
+            <summary>
+            File Already Exists
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.FolderAlreadyExists">
+            <summary>
+             Folder Already Exists
+            </summary>
+        </member>
+        <member name="F:SmartVault.Core.ErrorCodes.MaintenanceException">
+            <summary>
+            Maintenace Exception
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.Hash">
+            <summary> Represents a comparable, sortable, hash code </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.MD5(System.Byte[])">
+            <summary> Computes an MD5 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.MD5(System.IO.Stream)">
+            <summary> Computes an MD5 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA1(System.Byte[])">
+            <summary> Computes an SHA1 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA1(System.IO.Stream)">
+            <summary> Computes an SHA1 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA256(System.Byte[])">
+            <summary> Computes an SHA256 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA256(System.IO.Stream)">
+            <summary> Computes an SHA256 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA384(System.Byte[])">
+            <summary> Computes an SHA384 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA384(System.IO.Stream)">
+            <summary> Computes an SHA384 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA512(System.Byte[])">
+            <summary> Computes an SHA512 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.SHA512(System.IO.Stream)">
+            <summary> Computes an SHA512 hash </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.FromBytes(System.Byte[])">
+            <summary> Creates a comparable Hash object from the given hashcode bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.FromString(System.String)">
+            <summary> Creates a comparable Hash object from the base-64 encoded hashcode bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.CreateAlgorithm">
+            <summary>
+            Creates the hash algorithm associated with this length of hash
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.Combine(SmartVault.Core.Crypto.Hash)">
+            <summary>
+            If the hash provided is the same size as this hash both hash codes are feed back into
+            the hash algorithm associated with this length of hash to produce the result value.
+            If the hash provided is a different length, it is first hashed with this algorithm
+            before the two values are combined.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.Combine(System.Byte[])">
+            <summary>
+            Combines the bytes provided by first computing a like sized hash of those bytes and
+            then combining the two equal hash values with the same hash algorithm.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.ToArray">
+            <summary> Returns a copy of the hash code bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.ToString">
+            <summary> Returns the hash code as a base-64 encoded string </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.Hash.CompareTo(SmartVault.Core.Crypto.Hash)">
+            <summary> Compares the hash codes and returns the result </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.Hash.AlgorithmOID">
+            <summary> Returns the OID of the hash algorithm </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.Hash.AlgorithmName">
+            <summary> Returns the name of the hash algorithm </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.Hash.Length">
+            <summary> Returns the length in bytes of the hash code </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.Hash.HashCode">
+            <summary> Returns a hash of the hash code :) </summary>
+        </member>
+        <member name="T:SmartVault.Core.RelativePath">
+            <summary>
+            RelativePath
+            
+            Provides a pathing class for easy handling of non host portion of a URI path.
+            These paths are case insensitive.
+            
+            This path is not rooted.
+            
+            Example: My Account/Vault/Folder
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.Append(System.String)">
+            <summary>
+            Append Element
+            </summary>
+            <param name="element">Element to append</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.Append(SmartVault.Core.RelativePath)">
+            <summary>
+            Append Relative Path
+            </summary>
+            <param name="path">Relative Path to Append</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.ToAbsolute">
+            <summary>
+            Convert to Absolute Path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.op_Equality(SmartVault.Core.RelativePath,SmartVault.Core.RelativePath)">
+            <summary>
+            Equal Operator
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.op_Inequality(SmartVault.Core.RelativePath,SmartVault.Core.RelativePath)">
+            <summary>
+            Not Equal Operator
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.ToString">
+            <summary>
+            ToString()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.Equals(System.Object)">
+            <summary>
+            Equals()
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.GetHashCode">
+            <summary>
+            GetHasCode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.Subpath(System.Int32)">
+            <summary>
+            Provide a subpath
+            </summary>
+            <param name="startIndex">Index to start at</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RelativePath.Subpath(System.Int32,System.Int32)">
+            <summary>
+            Provide a subpath
+            </summary>
+            <param name="startIndex">Index to start at</param>
+            <returns></returns>
+        </member>
+        <member name="P:SmartVault.Core.RelativePath.Last">
+            <summary>
+            Return Last Element
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.RelativePath.Count">
+            <summary>
+            Count
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.RelativePath.Item(System.Int32)">
+            <summary>
+            Indexer
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Core.RSAKeyPair">
+            <summary>
+            RSAKeyPair
+            
+            Simple container for public and private key. 
+            
+            This functionality should be ported back into CSharpTest.Net
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.RSAKeyPair.#ctor(SmartVault.Core.RSAPublicKey2,SmartVault.Core.RSAPrivateKey2)">
+            <summary>
+            Constructor
+            
+            </summary>
+            <param name="pub">Public Key. Cannot be NULL.</param>
+            <param name="pri">Private Key</param>
+        </member>
+        <member name="P:SmartVault.Core.RSAKeyPair.Public">
+            <summary>
+            Public Key
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.RSAKeyPair.Private">
+            <summary>
+            Private Key -- Can be NULL
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.RSAKeyPair.HasPublic">
+            <summary>
+            HasPublic
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.RSAKeyPair.HasPrivate">
+            <summary>
+            HasPrivate
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.RSAPrivateKey">
+            <summary>
+            Provides a wrapper around encrypting/decrypting with public/private key pairs from Certificats or CSP
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.Crypto.RSAPublicKey">
+            <summary>
+            Provides a wrapper around encrypting with public keys from Certificats or CSP
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.FromParameters(System.Security.Cryptography.RSAParameters)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.FromBytes(System.Byte[])">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.FromStore(System.String)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.FromStore(System.Security.Cryptography.CspParameters)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.FromXml(System.String)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary> Create RSAPublicKey with the provided key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.#ctor(System.Security.Cryptography.RSAParameters)">
+            <summary> Create RSAPublicKey with the provided key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.#ctor(System.Security.Cryptography.RSACryptoServiceProvider)">
+            <summary> Create RSAPublicKey with the provided key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.Dispose(System.Boolean)">
+            <summary> Clears the key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.EncryptBlock(System.Byte[])">
+            <summary> Encrypts the given bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.DecryptBlock(System.Byte[])">
+            <summary> Decrypts the given bytes </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.ExportParameters">
+            <summary> Returns the public/private key information </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.FromXml(System.Xml.XmlReader)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.ToXml(System.Xml.XmlWriter)">
+            <summary> Returns the key information </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.ToXml">
+            <summary> Returns the key information </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.ToArray">
+            <summary> Returns a CspBlob standard binary key definition </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.WriteToStore(System.String)">
+            <summary>
+            Writes a copy of this key into the local Csp store for the current user
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.WriteToStore(System.String,System.Security.Cryptography.CspProviderFlags)">
+            <summary>
+            Writes a copy of this key into the local Csp store with the given options
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.DeleteFromStore">
+            <summary>
+            Removes the key from the Csp store if it was fetch with RSAPublicKey.FromStore(...)
+            </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPublicKey.VerifyHash(System.Byte[],SmartVault.Core.Crypto.Hash)">
+            <summary>
+            Signs the provided Hash code with the private key and returns the hash signature
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.RSAPublicKey.RSAKey">
+            <summary> Returns the key to use for encryption/decryption </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.RSAPublicKey.BlockSize">
+            <summary> 
+            For this type of padding, block size is (key byte length - 11) 
+            see http://msdn.microsoft.com/en-us/library/system.security.cryptography.rsacryptoserviceprovider.encrypt.aspx 
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.RSAPublicKey.TransformSize">
+            <summary> Output size </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.RSAPublicKey.IsPrivateKey">
+            <summary> Returns True if this object is also an RSAPrivateKey </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.RSAPrivateKey.DefaultKeySize">
+            <summary> The default key size in bits to use when constructing a new keypair </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.RSAPrivateKey.MinKeySize">
+            <summary> The minimum allowed value for an RSA key </summary>
+        </member>
+        <member name="F:SmartVault.Core.Crypto.RSAPrivateKey.MaxKeySize">
+            <summary> The maximum allowed value for an RSA key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.FromParameters(System.Security.Cryptography.RSAParameters)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.FromBytes(System.Byte[])">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.FromXml(System.String)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.FromStore(System.String)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.FromStore(System.Security.Cryptography.CspParameters)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.#ctor">
+            <summary> Create RSAPrivateKey with a new keypair of (DefaultKeySize) bit length </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.#ctor(System.Int32)">
+            <param name="keySize">the bit-size of the key to generate, 384 - 16384 in increments of 8</param>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary> Create RSAPrivateKey with the provided key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.#ctor(System.Security.Cryptography.RSAParameters)">
+            <summary> Create RSAPrivateKey with the provided key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.#ctor(System.Security.Cryptography.RSACryptoServiceProvider)">
+            <summary> Create RSAPrivateKey with the provided key </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.CertToPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary> Extract private key from certificate </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.FromXml(System.Xml.XmlReader)">
+            <summary> Creates the key from the information provided </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.ToXml(System.Xml.XmlWriter)">
+            <summary> Returns the key information </summary>
+        </member>
+        <member name="M:SmartVault.Core.Crypto.RSAPrivateKey.SignHash(SmartVault.Core.Crypto.Hash)">
+            <summary>
+            Signs the provided Hash code with the private key and returns the hash signature
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.Crypto.RSAPrivateKey.PublicKey">
+            <summary>
+            Returns only the public key of this public/private key pair
+            </summary>
+        </member>
+        <member name="T:SmartVault.Core.RSAPrivateKey2">
+             <summary>
+             RSAPrivateKey2
+             
+             Extends RSAPrivateKey to introduce the ability to work with PEM files.
+            
+             This functionality should be ported back into CSharpTest.Net
+             </summary>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.#ctor(System.Security.Cryptography.RSACryptoServiceProvider)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.#ctor(System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.FromXml(System.Xml.XmlReader)">
+            <summary>
+            FromXml
+            </summary>
+            <param name="xrdr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.KeyPairFromXml(System.Xml.XmlReader)">
+            <summary>
+            Reads a public/private key from XML
+            </summary>
+            <param name="xrdr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.KeyPairFromPem(System.IO.TextReader)">
+            <summary>
+            KeyPairFromPem
+            </summary>
+            <param name="rdr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.KeyPairFromPem(System.String)">
+            <summary>
+            KeyPairFromPem
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.KeyPairFromXml(System.String)">
+            <summary>
+            Reads a public/private key from XML
+            </summary>
+            <param name="txt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.WritePEM(System.IO.TextWriter)">
+            <summary>
+            Writes the private key to PEM format
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:SmartVault.Core.RSAPrivateKey2.ToPEM">
+            <summary>
+            Convert the private key to PEM format
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Core.RSAPublicKey2">
+             <summary>
+             RSAPublicKey2
+             
+             Extends RSAPublicKey2 to introduce the ability to work with PEM files.
+            
+             This functionality should be ported back into CSharpTest.Net
+             </summary>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.#ctor(System.Security.Cryptography.RSACryptoServiceProvider)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.#ctor(System.Security.Cryptography.RSAParameters)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.FromXml(System.Xml.XmlReader)">
+            <summary>
+            Reads a public key from XML
+            </summary>
+            <param name="xrdr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.FromXml(System.String)">
+            <summary>
+            Reads a public key from XML.
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.FromPEM(System.String)">
+            <summary>
+            Reads an RSAKeyPair from PEM. Can handle public keys, certificates, etc.
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.ReadPEM(System.IO.TextReader)">
+            <summary>
+            Reads an RSAKeyPair from PEM. Can handle public keys, certificates, etc.
+            </summary>
+            <param name="rdr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.ToPEM">
+            <summary>
+            Writes the public key to PEM format
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Core.RSAPublicKey2.WritePEM(System.IO.TextWriter)">
+            <summary>
+            Writes the public key to PEM format
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:SmartVault.Core.SVException">
+            <summary> Represents the root SmartVault exception </summary>
+        </member>
+        <member name="M:SmartVault.Core.SVException.#ctor(System.String)">
+            <summary> Constructor with message </summary>
+        </member>
+        <member name="M:SmartVault.Core.SVException.#ctor(System.String,System.Exception)">
+            <summary> Constructor with message an inner exception </summary>
+        </member>
+        <member name="M:SmartVault.Core.SVException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary> Serialization constructor </summary>
+        </member>
+        <member name="M:SmartVault.Core.SVException.ToString">
+            <summary> Creates and returns a string representation of the current exception. </summary>
+        </member>
+        <member name="M:SmartVault.Core.SVException.CreateFromHResult(System.Int32,System.String)">
+            <summary>
+            Creates an excpetion from the provided hresult and message text
+            </summary>
+        </member>
+        <member name="P:SmartVault.Core.SVException.InstanceGuid">
+            <summary> Gets or sets the exception instance identifier used to track exceptions across process boundries </summary>
+        </member>
+        <member name="P:SmartVault.Core.SVException.CorrectiveLink">
+            <summary> Gets or sets the link for users to take corrective action or null if none exists </summary>
+        </member>
+        <member name="P:SmartVault.Core.SVException.HttpStatusCode">
+            <summary> Gets the HTTP status code used for this exception type </summary>
+        </member>
+        <member name="P:SmartVault.Core.SVException.ErrorCode">
+            <summary> Gets the HResult for this exception type </summary>
+        </member>
+    </members>
+</doc>

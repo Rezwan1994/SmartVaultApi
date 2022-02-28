@@ -1,0 +1,774 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartVault.Rest</name>
+    </assembly>
+    <members>
+        <member name="T:SmartVault.Rest.Authentication">
+            <summary>
+            Authentication
+            
+            This class is used to performed the basic steps of authentication. 
+            The authentication steps MUST always be performed server side to protect
+            the trust relationship between SmartVault and your webserver. 
+            
+            Delegated Operations (those you perform as a user *may* be performed at 
+            the client by passing the access token back to your client). 
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.Authentication.#ctor(SmartVault.Rest.ServerCfg)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="cfg"></param>
+        </member>
+        <member name="M:SmartVault.Rest.Authentication.GetClientAccessToken">
+            <summary>
+            GetClientAccessToken
+            
+            Get a client access token.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.Authentication.CreateClientProtocol">
+            <summary>
+            CreateClientProtocol
+            
+            Create an object that can be used to perform operations as the client. This is 
+            for server to server operations.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Rest.ClientCfg">
+            <summary>
+            ClientCfg
+            
+            Incorporates the information needed to logon as a client. This object
+            contains the ClientId and a Client AccessToken.
+            </summary>
+        </member>
+        <member name="T:SmartVault.Rest.ServerCfgBase">
+            <summary>
+            ServerCfgBase
+            
+            Controls basic aspects of the rest protocol
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfgBase.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfgBase.#ctor(System.Uri)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="rootUri">URI of REST Host</param>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfgBase.#ctor(System.Uri,SmartVault.Net.MediaType)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="rootUri">URI of REST Host</param>
+            <param name="mediaType">Media Type to Use for Transmission</param>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfgBase.#ctor(SmartVault.Rest.ServerCfgBase)">
+            <summary>
+            Copy Constructor
+            </summary>
+            <param name="cfg"></param>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfgBase.RootUri">
+            <summary>
+            Root Uri of the REST Server -- Defaults to https://rest.smartvault.com
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfgBase.MediaType">
+            <summary>
+            Media Type -- defaults to application application/x-protobuf
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfgBase.Encoding">
+            <summary>
+            Encoding -- defaults ot NULL. Not used for application/x-protobuf
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfgBase.RequestTimeout">
+            <summary>
+            Request write timeout in (ms), or Timeout.Infinite
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfgBase.ResponseTimeout">
+            <summary>
+            Request write timeout in (ms), or Timeout.Infinite
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.ClientCfg.#ctor(System.String,System.String,SmartVault.Rest.ServerCfgBase)">
+            <summary>
+            Constructor -- Used to construct a ClientCfg using an access token for the client.
+            This is used by Autonomous OAuth.
+            </summary>
+            <param name="clientId">Client Id</param>
+            <param name="accessToken">Access Token (Returned from Authentication class)</param>
+            <param name="cfg">Configuration</param>
+        </member>
+        <member name="P:SmartVault.Rest.ClientCfg.ClientId">
+            <summary>
+            ClientId
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.ClientCfg.AccessToken">
+            <summary>
+            AccessToken
+            </summary>
+        </member>
+        <member name="T:SmartVault.Rest.ClientProtocol">
+            <summary>
+            ClientProtocol
+            
+            Provides the operations that an occur once the client has been authenticated.
+            These operations will always be performed server side as the credentials
+            present provides wide spread control of the operation your web server
+            can perform.
+            
+            Delegated Operations (those you perform as a user *may* be performed at 
+            the client by passing the access token back to your client). 
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.ClientProtocol.StatUser(System.String)">
+            <summary>
+            StatUser
+            
+            Uses to determine if a user exists and whether or not this client has been authorized to access.
+            </summary>
+            <param name="userEmail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.ClientProtocol.SignUpNewUser(SmartVault.Proto.SignUpNewUserRequest)">
+            <summary>
+            SignUpNewUser
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.ClientProtocol.GetDelegationAccessToken(System.String)">
+             <summary>
+             GetDelegationAccessToken
+            
+             Create an access token that can be handed back to a client such as a web browser, mobile application, etc.
+             </summary>
+             <param name="userEmail"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.ClientProtocol.CreateDelegatedProtocol(System.String)">
+            <summary>
+            CreateDelegatedProtocol
+            
+            Create an object that can be used to perform operations as the user. This method is useful if the client operations
+            are occuring from your web server -- say rather than a web browser.
+            </summary>
+            <param name="userEmail">User to impersonate</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.ClientProtocol.RequestEmail(System.String,SmartVault.Proto.SendEmailRequest)">
+            <summary>
+            Request an email is sent to the user
+            </summary>
+            <param name="email"></param>
+            <param name="rqst"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Rest.Constants">
+            <summary>
+            Constants
+            
+            These are constants used by the REST implementation.
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.PublicServer">
+            <summary>
+            Endpoint for production.
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.BetaServer">
+            <summary>
+            Endpoint for testing.
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.AppPath">
+            <summary>
+            The root path for application integration
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.AppAliasPath">
+            <summary>
+            The root path for application aliases
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.PthPath">
+            <summary>
+             The root path for generic integration
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.GrpPath">
+            <summary>
+             The root path for group information
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.Slash">
+            <summary>
+            Slash
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.Constants.Msg">
+            <summary>
+            Msg
+            </summary>
+        </member>
+        <member name="T:SmartVault.Rest.DelegatedProtocol">
+            <summary>
+            DelegatedProtocol
+            
+            Represents a wrapper around the user driven portion of the REST protcool.
+            An access token is used to access this portion of the protocol.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.#ctor(SmartVault.Rest.UserCfg)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="cfg"></param>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.GetUserMessages">
+            <summary>
+            Retrieve a list of messages for the user. This will retrieve messages regardless of account context.
+            This will usually include:
+            
+            1. Trial expiring
+            2. Trial expired
+            3. Maintenance Notices
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.GetUserMessages(SmartVault.Core.AbsolutePath)">
+            <summary>
+            Retrieve a list of messages for the user. The path will be used to determine account context.
+            This will usually include:
+            
+            1. Trial expiring
+            2. Trial expired
+            3. Maintenance Notices
+            
+            </summary>
+            <param name="ctxUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Copy(SmartVault.Core.AbsolutePath,SmartVault.Core.AbsolutePath)">
+            <summary>
+            Copy a file or folder from one location to another
+            </summary>
+            <param name="src">Source path</param>
+            <param name="dst">Destination path</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Copy(SmartVault.Core.AbsolutePath,SmartVault.Proto.CopyNodeRequest)">
+            <summary>
+            Copy a file or folder from one location to another
+            </summary>
+            <param name="src">Source path</param>
+            <param name="rqst">Destination Information</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Copy(SmartVault.Core.AbsolutePath,System.String,System.String,System.String,System.String,System.String,SmartVault.Proto.ReplaceOptions)">
+            <summary>
+            Copy into a company record
+            </summary>
+            <param name="src"></param>
+            <param name="name"></param>
+            <param name="applicationType"></param>
+            <param name="applicationId"></param>
+            <param name="recordType"></param>
+            <param name="recordId"></param>
+            <param name="replace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Move(SmartVault.Core.AbsolutePath,System.String,System.String,System.String,System.String,System.String,SmartVault.Proto.ReplaceOptions)">
+            <summary>
+            Move into a company record
+            </summary>
+            <param name="src"></param>
+            <param name="name"></param>
+            <param name="applicationType"></param>
+            <param name="applicationId"></param>
+            <param name="recordType"></param>
+            <param name="recordId"></param>
+            <param name="replace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Move(SmartVault.Core.AbsolutePath,SmartVault.Core.AbsolutePath)">
+            <summary>
+            Move a file or folder from one location to another
+            </summary>
+            <param name="src">Source Path</param>
+            <param name="dst">Destination Path</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Move(SmartVault.Core.AbsolutePath,SmartVault.Proto.MoveNodeRequest)">
+            <summary>
+            Move a file or folder from one location to another
+            </summary>
+            <param name="src">Source Path</param>
+            <param name="rqst">Destination Info</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Navigate(SmartVault.Core.AbsolutePath,System.Int32)">
+            <summary>
+            Browse to a location in the hierarchy
+            </summary>
+            <param name="remotePath">Path</param>
+            <param name="children">Depth of children to return</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Navigate(SmartVault.Core.AbsolutePath,SmartVault.Rest.NodeOptions)">
+            <summary>
+            Browse to a location in the hierarchy
+            </summary>
+            <param name="remotePath">Path</param>
+            <param name="options">Options</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Navigate(SmartVault.Core.AbsolutePath,SmartVault.Proto.QueryEntityById,SmartVault.Rest.NodeOptions)">
+            <summary>
+            Browse to a location in the hierachy. Use a QBE model to qualify request.
+            </summary>
+            <param name="remotePath"></param>
+            <param name="query"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Navigate(SmartVault.Core.AbsolutePath,SmartVault.Proto.QueryEntityById,System.Int32)">
+            <summary>
+            Browse to a location in the hieracrchy. Use a QBE model to qualify request.
+            </summary>
+            <param name="remotePath"></param>
+            <param name="query"></param>
+            <param name="children"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.AddUser(SmartVault.Core.AbsolutePath)">
+            <summary>
+            Add a user to a particular account
+            </summary>
+            <param name="remotePath">Path to the account</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.Update(SmartVault.Core.AbsolutePath,SmartVault.Rest.NodeOptions,SmartVault.Proto.ChangeNodeRequest)">
+            <summary>
+            Update a file or a folder
+            </summary>
+            <param name="remotePath">Path of file folder</param>
+            <param name="options">Options</param>
+            <param name="request">Changes to make</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostFile(SmartVault.Core.AbsolutePath,SmartVault.Proto.UploadFileRequest,System.String)">
+            <summary>
+            Upload a file
+            </summary>
+            <param name="parentPath">Parent path</param>
+            <param name="request">Information about file</param>
+            <param name="localPath">Local file to upload</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostFile(SmartVault.Core.AbsolutePath,SmartVault.Proto.UploadFileRequest,System.IO.Stream)">
+            <summary>
+            Upload a file
+            </summary>
+            <param name="parentPath">Parent path</param>
+            <param name="request">Information about file</param>
+            <param name="stream">Stream to upload</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostFile(SmartVault.Core.AbsolutePath,System.String,System.String,SmartVault.Proto.ReplaceOptions,System.IO.Stream)">
+            <summary>
+            Upload a file
+            </summary>
+            <param name="parentPath"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+            <param name="replace"></param>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.AttachFile(System.String,System.String,System.String,System.String,System.String,System.String,SmartVault.Proto.ReplaceOptions,System.IO.Stream)">
+            <summary>
+            Attach a file to a company object
+            </summary>
+            <param name="applicationType"></param>
+            <param name="applicationId"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+            <param name="recordType"></param>
+            <param name="recordId"></param>
+            <param name="replace"></param>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostFile(SmartVault.Core.AbsolutePath,SmartVault.Proto.UploadFileRequest,System.String,SmartVault.Net.UploadStyle)">
+            <summary>
+            Upload a file
+            </summary>
+            <param name="parentPath">Parent path</param>
+            <param name="request">Information about file</param>
+            <param name="localPath">Local file to upload</param>
+            <param name="style">HTTP Packet Style</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostFile(SmartVault.Core.AbsolutePath,SmartVault.Proto.UploadFileRequest,System.IO.Stream,SmartVault.Net.UploadStyle)">
+            <summary>
+            Upload a file
+            </summary>
+            <param name="parentPath">Parent path</param>
+            <param name="request">Information about file</param>
+            <param name="stream">Stream to upload</param>
+            <param name="style">HTTP Packet Style</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostFile(SmartVault.Rest.PostFileInfo)">
+            <summary>
+            Upload a file from a PostFileInfo
+            </summary>
+            <param name="fileInfo">Parent path</param>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.DeleteFile(SmartVault.Core.AbsolutePath)">
+            <summary>
+            Delete file
+            </summary>
+            <param name="path">Path to file</param>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.CreateFolder(SmartVault.Core.AbsolutePath,SmartVault.Proto.CreateFolderRequest)">
+            <summary>
+            Create a folder
+            </summary>
+            <param name="path">Path to folder</param>
+            <param name="req">Request</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.CreateFolder(SmartVault.Core.AbsolutePath,System.String,SmartVault.Proto.CreateFolderRequest)">
+            <summary>
+            Create a folder
+            </summary>
+            <param name="parentPath">Path to parent</param>
+            <param name="name">Name of folder</param>
+            <param name="req">Request</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.CreateEntity(SmartVault.Core.AbsolutePath,SmartVault.Proto.CreateEntityRequest)">
+            <summary>
+            Create an entity
+            </summary>
+            <param name="path">Path to entity</param>
+            <param name="req">Request</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.CreateEntity(SmartVault.Core.AbsolutePath,System.String,SmartVault.Proto.CreateEntityRequest)">
+            <summary>
+            Create an entity
+            </summary>
+            <param name="parentPath">Path to parent</param>
+            <param name="name">Name of entity</param>
+            <param name="req">Request</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostEntity(SmartVault.Core.AbsolutePath,SmartVault.Proto.PostEntityRequest,SmartVault.Rest.NodeOptions)">
+            <summary>
+            PostEntity
+            </summary>
+            <param name="path"></param>
+            <param name="req"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.PostEntity(SmartVault.Core.AbsolutePath,SmartVault.Proto.PostEntityRequest)">
+            <summary>
+            PostEntity
+            </summary>
+            <param name="path"></param>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.ReadFile(SmartVault.Core.AbsolutePath)">
+            <summary>
+            Read File
+            </summary>
+            <param name="remotePath">Path to file</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.DownloadFile(SmartVault.Core.AbsolutePath,System.String,System.Boolean)">
+            <summary>
+            Download File
+            </summary>
+            <param name="remotePath">Remove path</param>
+            <param name="localPath">Local path</param>
+            <param name="overwrite">Overwrite local file if exists?</param>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.GetCompanyPath(System.String,System.String)">
+            <summary>
+            Given an ApplicationType and Application Id return the path to the company
+            </summary>
+            <param name="applicationType"></param>
+            <param name="applicationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.GetCompanyPathFromAlias(System.String,System.String)">
+            <summary>
+            Given an app alias, look up the application path
+            </summary>
+            <param name="aliasType"></param>
+            <param name="aliasId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.DoesCompanyExist(System.String,System.String)">
+            <summary>
+            Determine if a company exists
+            </summary>
+            <param name="applicationType"></param>
+            <param name="applicationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.DelegatedProtocol.ProvisionCompany(SmartVault.Core.AbsolutePath,System.String,System.String,System.String)">
+            <summary>
+            Provision Company
+            </summary>
+            <param name="provisionAt">/nodes/pth based path to provision the company at</param>
+            <param name="name">Name of the company</param>
+            <param name="applicationType"></param>
+            <param name="applicationId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Rest.NodeOptions">
+            <summary>
+            NodeOptions
+            
+            This encapsulates the various optional elements of a node request.
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.Children">
+            <summary>
+            The depth of children to enumerate.
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.IncludeAcl">
+            <summary>
+            Include the ACL in the request?
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.IncludeExtendedProperties">
+            <summary>
+            Include Extended Properties in the request
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.IncludeStateProperties">
+            <summary>
+            Include State Properties
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.IncludeVersionProperties">
+            <summary>
+            Include Version Properties
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.SearchCriteria">
+            <summary>
+            Search Criteria
+            
+            The criteria of the search
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.Sort">
+            <summary>
+            Sort Criteria
+            
+            name | modified_date | size
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.Direction">
+            <summary>
+            Sort Direction
+            
+            asc | desc
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.Page">
+            <summary>
+            What page do you want to pull data from?
+            
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.PerPage">
+            <summary>
+            Per Page 
+            </summary>
+        </member>
+        <member name="F:SmartVault.Rest.NodeOptions.RecordID">
+            <summary>
+            Related record identity
+            </summary>
+        </member>
+        <member name="T:SmartVault.Rest.PublicClientCfg">
+            <summary>
+            PublicClientCfg
+            
+            Incorporates the information used by a client incapable of logging on 
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientCfg.#ctor(System.String,SmartVault.Rest.ServerCfgBase)">
+            <summary>
+            Constructor -- Used to construct a ClientCfg without an access token for the client.
+            This is used by PIN Based OAuth.
+            </summary>
+            <param name="clientId">Client Id</param>
+            <param name="cfg">Configuration</param>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientCfg.#ctor(System.Uri,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="uri"></param>
+            <param name="clientId"></param>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientCfg.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clientId"></param>
+        </member>
+        <member name="P:SmartVault.Rest.PublicClientCfg.ClientId">
+            <summary>
+            ClientId
+            </summary>
+        </member>
+        <member name="T:SmartVault.Rest.PublicClientProtocol">
+            <summary>
+            PublicClientProtocol
+            
+            Provides the operations that an occur for a client incapable of authentication.
+            
+            Delegated Operations (those you perform as a user *may* be performed at 
+            the client by passing the access token back to your client). 
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientProtocol.GetPinRequestEndpoint(System.String)">
+            <summary>
+            Return the endpoint we can direct a user to in order to get a URL you can direct the user to. This URL will prompt the
+            user to authorize your application and provide a PIN the user can copy and paste into your application.
+            </summary>
+            <param name="useremail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientProtocol.GetPinRequestEndpoint">
+            <summary>
+            Get the request endpoint without an email address
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientProtocol.GetDelegationAccessToken(System.String,System.String)">
+             <summary>
+             GetDelegationAccessToken
+            
+             Create an access token that can be handed back to a client such as a web browser, mobile application, etc.
+             </summary>
+             <param name="userEmail"></param>
+             <param name="userPin">User PIN provided by user</param>
+             <returns></returns>
+        </member>
+        <member name="M:SmartVault.Rest.PublicClientProtocol.CreateDelegatedProtocol(System.String,System.String)">
+            <summary>
+            CreateDelegatedProtocol
+            
+            Create an object that can be used to perform operations as the user. This method is useful if the client operations
+            are occuring from your web server -- say rather than a web browser.
+            </summary>
+            <param name="userEmail">User to impersonate</param>
+            <param name="userPin">User PIN provided by user</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartVault.Rest.ServerCfg">
+            <summary>
+            ServerCfg
+            
+            Controls the configuration of the REST protocol for 
+            server to server operations.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfg.#ctor(System.String,SmartVault.Core.RSAPrivateKey2)">
+            <summary>
+            ServerCfg
+            </summary>
+            <param name="clientId">Your client identifier</param>
+            <param name="privateKey">Your private key</param>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfg.#ctor(System.Uri,SmartVault.Net.MediaType,System.String,SmartVault.Core.RSAPrivateKey2)">
+            <summary>
+            ServerCfg
+            </summary>
+            <param name="rootUri">URI of REST Host</param>
+            <param name="mediaType">Media Type of transmission</param>
+            <param name="clientId">Your client identifier</param>
+            <param name="privateKey">Your private key</param>
+        </member>
+        <member name="M:SmartVault.Rest.ServerCfg.#ctor(SmartVault.Rest.ServerCfg)">
+            <summary>
+            Copy Constructor
+            </summary>
+            <param name="cfg"></param>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfg.PrivateKey">
+            <summary>
+            Private Key
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.ServerCfg.ClientId">
+            <summary>
+            Client Id
+            </summary>
+        </member>
+        <member name="T:SmartVault.Rest.UserCfg">
+            <summary>
+            UserCfg
+            
+            Controls the configuration of the rest protocol for
+            user operations.
+            </summary>
+        </member>
+        <member name="M:SmartVault.Rest.UserCfg.#ctor(System.String,SmartVault.Proto.DelegationTokenResponse,SmartVault.Rest.ServerCfgBase)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="username">Username (Email)</param>
+            <param name="token">Delegation Token Response</param>
+            <param name="cfg"></param>
+        </member>
+        <member name="P:SmartVault.Rest.UserCfg.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.UserCfg.AccessToken">
+            <summary>
+            AccessToken
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.UserCfg.Expires">
+            <summary>
+            Expires -- how many seconds does this token expire in.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Rest.UserCfg.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+    </members>
+</doc>

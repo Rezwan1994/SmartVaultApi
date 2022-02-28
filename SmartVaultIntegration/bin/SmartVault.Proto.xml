@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartVault.Proto</name>
+    </assembly>
+    <members>
+        <member name="T:SmartVault.Proto.EffectivePermissionFlags">
+            <summary>
+            EffectivePermissionFlags
+            
+            These represent the permissions in NodeResponse.message.your_permissions.
+            These represent what a specific user can effectively do. This takes into
+            account several things, including:
+            
+            A. Access Control List
+            B. License Type
+            C. Capabilities of Node (i.e. you can't create files under an account)
+            </summary>
+        </member>
+        <member name="T:SmartVault.Proto.PermissionFlags">
+             <summary>
+             PermissionFlags
+            
+             These are the raw permission flags used by the ACL. 
+              
+             Permissions Flags
+             </summary>
+        </member>
+        <member name="T:SmartVault.Proto.ProtoFormats">
+            <summary>
+            ProtoFormats
+            
+            What format should the protocol buffer be read/written from.
+            </summary>
+        </member>
+        <member name="F:SmartVault.Proto.ProtoFormats.NATIVE">
+            <summary>
+            NATIVE Protocol Buffer Format
+            </summary>
+        </member>
+        <member name="F:SmartVault.Proto.ProtoFormats.JSON">
+            <summary>
+            JSON Format
+            </summary>
+        </member>
+        <member name="F:SmartVault.Proto.ProtoFormats.XML">
+            <summary>
+            XML Format
+            </summary>
+        </member>
+        <member name="T:SmartVault.Proto.ProtoSerializer">
+            <summary>
+            ProtoSerializer
+            
+            Encapsulates the ability to serializae proto buffers in three formats:
+            XML
+            JSON
+            Native
+            </summary>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.TransformMessageToJsonString(Google.ProtocolBuffers.IMessage)">
+            <summary>
+            Convert an IMessage to a UTF-8 Json String
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.TransformMessageToXmlString(Google.ProtocolBuffers.IMessage)">
+            <summary>
+            Convert an IMessage to a XML String
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.TransformJsonStringToMessage``1(System.String)">
+            <summary>
+            Convert a Json String to an IMessage
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.TransformFromByteArray``1(System.Byte[])">
+            <summary>
+            Read from Byte Array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.GetEncoding(System.Text.Encoding)">
+            <summary>
+            GetEncoding
+            
+            Used to ensure byte order elements are not writter to the stream
+            </summary>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.Read``1(SmartVault.Proto.ProtoFormats,System.Text.Encoding,System.IO.Stream,``0)">
+            <summary>
+            Read 
+            
+            Read a message
+            </summary>
+        </member>
+        <member name="M:SmartVault.Proto.ProtoSerializer.Write(SmartVault.Proto.ProtoFormats,System.Text.Encoding,System.IO.Stream,Google.ProtocolBuffers.IMessage)">
+            <summary>
+            Write
+            
+            Write a message
+            </summary>
+            <param name="format"></param>
+            <param name="encoding"></param>
+            <param name="s"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:SmartVault.Proto.ProtoSerializer.UseByteOrderMark">
+            <summary>
+            Should BOM be written or read. By default, this is false.
+            </summary>
+        </member>
+        <member name="P:SmartVault.Proto.ProtoSerializer.Format">
+            <summary>
+            Format used for serialization
+            </summary>
+        </member>
+        <member name="P:SmartVault.Proto.ProtoSerializer.Encoding">
+            <summary>
+            Encoding Format. Only used for JSON and XML.
+            </summary>
+        </member>
+    </members>
+</doc>
