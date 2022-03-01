@@ -1,4 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
 namespace ASPNET_MVC_HelloWorldSVRest.Controllers
 {
@@ -10,10 +14,10 @@ namespace ASPNET_MVC_HelloWorldSVRest.Controllers
         public ActionResult Index(string access_token, string email)
         {
             Models.SmartVault smartVault = (Models.SmartVault)Session["smartVault"];
-                
             smartVault.AuthenticateWithToken(email, access_token);
 
             return Redirect("/UploadFile");
         }
+
     }
 }
